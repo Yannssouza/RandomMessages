@@ -1,9 +1,11 @@
-let randomNames = ["Carl", "Max", "Steve"];
-let randomPlaces = ["Street", "Field", "Stadium"];
-let randomAnimal = ["Dog", "Bird", "Leo"];
+const random = {
+    names:  ["Carl", "Max", "Steve"],
+    places: ["Street", "Field", "Stadium"],
+    animal: ["Dog", "Bird", "Leo"]
+}
 
-let n = Math.floor(Math.random() * 3);
+const n = Math.floor(Math.random() * 3);
 let g = Math.floor(Math.random() * 3);
 let i = Math.floor(Math.random() * 3);
 
-console.log(`${randomNames[n]} was walking in the ${randomPlaces[g]}, than he saw a ${randomAnimal[i]}.`);
+console.log(`${random.names[n]} was walking in the ${random.places[g]}, than he saw a ${random.animal[i]}.`);
